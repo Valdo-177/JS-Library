@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://mp-keyner.github.io/figma/index.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    fghjkl;p
+    <div class="img2"></div>
+    <div class="img1"></div>
+    <div class="img3"></div>
+    <div class="img4"></div>
+    <div class="img5"></div>
+    <div class="img6"></div>
+    <div class="img7"></div>
+    <div class="img8"></div>
+    <div class="img9"></div>
+    <div class="img10"></div>
+    hiop
+    <script src="./index_Library.js"></script>
+  </body>
+</html>
+
+
+<!-- <style>
+    #Container {
+        min-width: 10pc;
+        min-height: 10pc;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 10pc;
+        height: 10pc;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #Container div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    #description {
+        flex-direction: row !important;
+    }
+
+    /* Estilos del modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        position: relative;
+    }
+
+    .modal-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<div id="Container"></div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+<script src="./index.js">
+    const dicElement = document.getElementById('Container');
+    const modal = document.getElementById('myModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeModal = document.querySelector('.close-modal');
+
+    const elementos = [
+        {
+            name: 'Gorras',
+            img: 'https://img.freepik.com/foto-gratis/vista-composicion-articulos-deportivos-bien-ordenados-organizados_23-2150275226.jpg?w=740',
+            description: 'Una gorra deportiva perfecta para actividades al aire libre.'
+        },
+        {
+            name: 'Gorras 1',
+            img: 'https://img.freepik.com/foto-gratis/vista-composicion-articulos-deportivos-bien-ordenados-organizados_23-2150275226.jpg?w=740',
+            description: 'Gorra de estilo casual para uso diario.'
+        },
+        {
+            name: 'Gorras 2',
+            img: 'https://img.freepik.com/foto-gratis/vista-composicion-articulos-deportivos-bien-ordenados-organizados_23-2150275226.jpg?w=740',
+            description: 'Gorra ideal para deportistas, ligera y cómoda.'
+        },
+    ];
+
+    elementos.map((item, index) => {
+        dicElement.innerHTML += `
+        <div class="clickElement" data-index="${index}">
+            <img src="${item.img}" alt="${item.name}">
+            <div id="description">
+                <span>${item.name}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+            </div>
+        </div>
+    `;
+    });
+
+    document.querySelectorAll('.clickElement').forEach(el => {
+        el.addEventListener("click", (e) => {
+            const index = e.currentTarget.getAttribute('data-index');
+            const item = elementos[index];
+
+            modalImage.src = item.img;
+            modalTitle.innerText = item.name;
+            modalDescription.innerText = item.description;
+
+            modal.style.display = 'flex';
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script> -->
